@@ -1,0 +1,213 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  cursor:pointer;
+  margin:5px;
+}
+body{
+  color:#222;
+}
+
+img{
+  padding:5px;
+  width: 400px;
+  height: 250px;
+}
+main{
+  padding:10px;
+  max-width: 1080px;
+  margin:0 auto;
+}
+header{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+header a{
+  text-decoration: none;
+  color:inherit;
+}
+header a.logo{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+header nav{
+  display:flex;
+  gap:0px;
+}
+div.texts p.info{
+  display: flex;
+  align-items: center;
+}
+
+div.post{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+div.post div.image{
+  max-width: 400px;
+}
+
+@media screen and (min-width: 700px){
+  div.post{
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+.css-button {
+  --hover-shadows: 16px 16px 33px #121212,
+                    -16px -16px 33px #303030;
+  --accent: #555;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #212121;
+  color: white;
+  padding: 8px 15px;
+ 
+}
+ 
+.css-button:active {
+  background-color: var(--accent);
+  transform: scale(0.95);
+}
+ 
+
+div.post div.texts h2{
+  margin:0;
+  font-size: 1.8rem;
+  
+}
+div.post div.texts a{
+  text-decoration: none;
+  color:inherit;
+}
+
+div.post p.info{
+  margin:6px 0;
+  color:#888;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  gap:10px;
+}
+div.post p.info a.author{
+  color:#333;
+}
+div.post p.summary{
+  margin:10px 0;
+  line-height: 1.4rem;
+}
+
+form.login, form.register{
+  max-width: 400px;
+  margin:0 auto;
+}
+
+input{
+  display: block;
+  margin-bottom: 5px;
+  width:100%;
+  padding:10px 7px;
+  font-size: 15px;
+  background-color: #fff;
+  border:2px solid #ddd;
+  border-radius: 5px;
+}
+
+button{
+  margin-top: 20px;
+  cursor:pointer;
+  width:100%;
+  display:block;
+  background-color: #212020;
+  border:0;
+  color:#fff;
+  border-radius: 5px;
+  padding:7px 0;
+}
+form.login h1,form.register h1{
+  text-align: center;
+}
+
+div.post-page div.image{
+  max-height:200px;
+  display: flex;
+  overflow: hidden;
+
+}
+div.post-page div.image img{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+}
+
+div.post-page a{
+  color:#333;
+  text-decoration: underline;
+}
+
+div.post-page h1{
+  text-align: center;
+  margin-top: 10px 0 5px;
+}
+
+div.post-page time{
+  text-align: center;
+  display:block;
+  font-size: 0.7rem;
+  color:#aaa;
+}
+div.post-page  div.author{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  margin-left: 100px;
+  max-width: 900px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+div.post-page div.content p{
+  line-height: 1.6rem;
+}
+
+div.edit-row{
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.post-page a.edit-button{
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  gap:5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+a svg{
+  height: 20px;
+}
