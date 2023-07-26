@@ -14,7 +14,6 @@ const User = require("./models/User");
 const app = express();
 
 const salt = bcrypt.genSaltSync(10);
-const secret = "asdfe45we45w345wegw345werjktjwertkj";
 const JAVA_JWT =
   "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmb28iLCJiYXIiOiJiYXoifQ.1MOXGiwGTFLU7-YMvOe2_q2ZRUHAMCVS7pbnOkRKCFV1HIvY8odBaqWVCQRuT2RUbKtGgA2elFRsuka4K1KP7A";
 app.use(express.json());
